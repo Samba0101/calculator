@@ -7,7 +7,7 @@ ARG JAR_LIB_FILE=cible/lib/
 WORKDIR / usr / local / runme
 
 # copier target / find-links.jar /usr/local/runme/app.jar
-COPIER $ {JAR_FILE} app.jar
+#COPIER $ {JAR_FILE} app.jar
 
 # copier les dépendances du projet
 # cp -rf cible / lib / / usr / local / runme / lib
