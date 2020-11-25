@@ -11,9 +11,8 @@ public class TestCalculator {
     }
     @Test
     public void testsum(){
-        int result=calculator.sum(10,6);
-                                 
-        if(result !=16){
+        int result=calculator.sum(10,5);
+        if(result !=15){
             Assert.fail();
         }
     }
