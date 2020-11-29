@@ -1,17 +1,21 @@
 FROM openjdk:8-jdk-alpine
 
-ARG JAR_FILE=target/ProjetGenieLogiciel-1.0-SNAPSHOT.jar
-ARG JAR_LIB_FILE=target/lib/
-# cd /usr/local/runme
-WORKDIR /usr/local/runme
+ARG JAR_FILE=cible/TestCalculator.jar
+ARG JAR_LIB_FILE=cible/lib/
 
-# copy target/find-links.jar /usr/local/runme/app.jar
-COPY ${JAR_FILE} app.jar
+# cd / usr / local / runme
+WORKDIR / usr / local / runme
 
-# copy project dependencies
-# cp -rf target/lib/  /usr/local/runme/lib
-ADD ${JAR_LIB_FILE} lib/
+ ##copier
+  target / find-links.jar /usr/local/runme/app.jar
+##COPIER
 
-# java -jar /usr/local/runme/app.jar
-ENTRYPOINT ["java","-jar","app.jar"]
+$ {JAR_FILE} app.jar
 
+# copier les dépendances du projet
+cp -rf cible / lib / / usr / local / runme / lib
+##AJOUTER
+$ {JAR_LIB_FILE} lib /
+
+ java -jar /usr/local/runme/app.jar
+ENTRYPOINT [ "java" , "-jar" , "app.jar" ]
