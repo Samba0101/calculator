@@ -20,27 +20,22 @@ public class TestCalculator {
     public void testminus(){
         int result=calculator.minus(10, 7);
         if(result!=3){
-            Assert.fail(); }
-    }
+            Assert.fail(); } }
     @Test
     public void testdivide(){
         int result=calculator.divide(20,2);
         if(result !=10){
-            Assert.fail();
-        } }
+            Assert.fail(); } }
     @Test
     public void testmultiplie(){
         int result=calculator.multiplie(4,5);
         if(result!=20){
-            Assert.fail();
-        }
-    }
+            Assert.fail(); } }
     @Test
     public void testmin(){
         int resut=calculator.min(7,5);
         if(resut !=5){
-            Assert.fail(); }
-    }
+            Assert.fail(); } }
     @Test
     public void testmax(){
         int result=calculator.max(15,23);
@@ -55,5 +50,7 @@ public class TestCalculator {
     public void testmaxElement(){
         int result=calculator.maxElement(new int[]{4,3,11,9,5});
         if(result !=11){
-            Assert.fail(); } }
+            Assert.fail();
+        }
+    }
 }
