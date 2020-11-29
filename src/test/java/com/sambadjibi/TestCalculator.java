@@ -38,7 +38,7 @@ public class TestCalculator {
             Assert.fail(); } }
     @Test
     public void testmax(){
-        int result=calculator.max(15,23);
+        int result=calculator.max(3,23);
         if(result !=23){
             Assert.fail(); } }
     @Test
