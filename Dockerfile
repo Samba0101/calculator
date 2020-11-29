@@ -3,7 +3,6 @@ FROM openjdk:8-jdk-alpine
 ARG JAR_FILE=target/ProjetGenieLogiciel-1.0-SNAPSHOT.jar
 ARG JAR_LIB_FILE=target/lib/
 
-<<<<<<< HEAD
 # cd / usr / local / runme
 WORKDIR / usr / local / runme
 
@@ -33,4 +32,3 @@ ADD ${JAR_LIB_FILE} lib/
 
 # java -jar /usr/local/runme/app.jar
 ENTRYPOINT ["java","-jar","app.jar"]
->>>>>>> 8824be1e6f3977f3b1b23e580c385da7bf4aca24
